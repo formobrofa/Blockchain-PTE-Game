@@ -1,0 +1,52 @@
+{
+  "name": "whac-a-nft",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"node auth/server.js\" \"next dev\"",
+    "build": "concurrently \"node auth/server.js\" \"next build\"",
+    "start": "concurrently \"node auth/server.js\" \"next start\"",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.4",
+    "@supabase/supabase-js": "^2.47.12",
+    "@walletconnect/ethereum-provider": "^2.17.2",
+    "@walletconnect/web3-provider": "^1.7.8",
+    "@web3auth/web3auth": "^1.1.0",
+    "axios": "^1.7.8",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.5.1",
+    "concurrently": "^9.1.0",
+    "cookie-parser": "^1.4.7",
+    "dot-env": "^0.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-fileupload": "^1.5.1",
+    "gsap": "^3.10.4",
+    "jsonwebtoken": "^9.0.2",
+    "magic-sdk": "^7.0.0",
+    "mongoose": "^8.8.3",
+    "moralis": "^1.8.1",
+    "moralis-v1": "^1.13.0",
+    "next": "12.1.6",
+    "nodemailer": "^6.9.16",
+    "paytmchecksum": "^1.5.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-moralis": "^1.4.0",
+    "request": "^2.88.2",
+    "sqlite3": "^5.1.7",
+    "validator": "^13.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/react": "^18.0.14",
+    "autoprefixer": "^10.4.7",
+    "eslint": "8.18.0",
+    "eslint-config-next": "12.1.6",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.4",
+    "typescript": "^4.7.4"
+  }
+}
